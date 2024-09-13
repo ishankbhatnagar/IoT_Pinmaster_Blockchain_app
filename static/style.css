@@ -1,0 +1,155 @@
+/*21BCT0097 ISHANK BHATNAGAR*/
+/* General body styling */
+body {
+  /* Background image settings */
+  background: url("background8.webp") no-repeat center center fixed;
+  background-size: cover;
+  /* Font and text color settings */
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  /* Remove default margin and padding */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styling */
+header {
+  /* Semi-transparent dark background for the header */
+  background-color: rgba(52, 58, 64, 0.8);
+  /* Padding for spacing inside the header */
+  padding: 20px;
+  /* Center-align text in the header */
+  text-align: center;
+  /* Text color and font weight */
+  color: white;
+  font-weight: 700;
+  /* Positioning for potential future layout adjustments */
+  position: relative;
+}
+
+/* Header text styling for different levels */
+header h1,
+header h2,
+header h3,
+header h4 {
+  /* Remove default margin and padding for header elements */
+  margin: 0;
+  padding: 5px;
+}
+
+/* Font size for the main title */
+header h1 {
+  font-size: 24px;
+}
+
+/* Font size for secondary titles */
+header h2 {
+  font-size: 20px;
+}
+
+/* Font size for tertiary titles */
+header h3 {
+  font-size: 18px;
+}
+
+/* Font size for quaternary titles */
+header h4 {
+  font-size: 16px;
+}
+
+/* Styling for the GPIO table */
+.gpio-table {
+  /* Table width and maximum width settings */
+  width: 80%;
+  max-width: 1000px;
+  /* Center the table and add margin for spacing */
+  margin: 20px auto;
+  /* Collapse borders to remove double borders */
+  border-collapse: collapse;
+  /* Shadow effect for the table */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* Background color with adjusted opacity for translucency */
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Styling for table headers and cells */
+.gpio-table th,
+.gpio-table td {
+  /* Border styling for better translucency */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* Padding inside table cells */
+  padding: 12px;
+  /* Font size for table text */
+  font-size: 16px;
+}
+
+/* Header cell styling */
+.gpio-table th {
+  /* Semi-transparent background for header cells */
+  background-color: rgba(52, 58, 64, 0.8);
+  /* Text color and font weight for header cells */
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* Data cell styling */
+.gpio-table td {
+  /* Slightly translucent background for data cells */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Text color for better readability */
+  color: #212529;
+  /* Center-align text and make it bold */
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Styling for GPIO control buttons container */
+.gpio-control {
+  /* Flexbox settings to center align and space out buttons */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Styling for GPIO control buttons */
+.gpio-control a {
+  /* Inline-block display to allow padding and border-radius */
+  display: inline-block;
+  /* Remove default link underline */
+  text-decoration: none;
+  /* Background color for ON buttons */
+  background-color: #28a745;
+  /* Text color for buttons */
+  color: white;
+  /* Padding inside buttons */
+  padding: 10px 20px;
+  /* Rounded corners for buttons */
+  border-radius: 5px;
+  /* Font size and weight */
+  font-size: 16px;
+  font-weight: 700;
+  /* Smooth transition for background color and transform effects */
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+/* Styling for OFF control buttons */
+.gpio-control a.off-switch {
+  /* Background color for OFF buttons */
+  background-color: #dc3545;
+}
+
+/* Active button styling */
+.gpio-control a.active {
+  /* Background color for active buttons */
+  background-color: #ffffff;
+  color: #28a745;
+  /* Border and scale effect to highlight the active button */
+  border: 2px solid #28a745;
+  transform: scale(0.95);
+}
+
+/* Hover effect for buttons */
+.gpio-control a:hover {
+  /* Slightly reduce opacity on hover */
+  opacity: 0.8;
+}

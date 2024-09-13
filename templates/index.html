@@ -1,0 +1,347 @@
+<!-- 21BCT0097 ISHANK BHATNAGAR -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Metadata for the page -->
+	<title>IoT Device Manager</title>
+	<!-- Link to the external CSS file for styling -->
+	<link rel="stylesheet" href='../static/style.css' />
+	<!-- Link to Google Fonts for typography, providing the Roboto font family -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Header section of the webpage -->
+	<header>
+		<!-- Subtitle describing the application -->
+		<h1>IoT PinMaster - Blockchain app for IoT</h1>
+	</header>
+
+	<!-- Table displaying GPIO pin controls -->
+	<table class="gpio-table">
+		<!-- Table header with column names -->
+		<thead>
+			<tr>
+				<th>GPIO Pins</th>
+				<th>Button Toggle Action</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!-- Each row represents a GPIO pin and its ON/OFF control buttons -->
+
+			<!-- Row for GPIO Pin 2 -->
+			<tr>
+				<td>GPIO Pin 2</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 2 ON -->
+					<a href="/two/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 2 OFF -->
+					<a class="off-switch" href="/two/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 3 -->
+			<tr>
+				<td>GPIO Pin 3</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 3 ON -->
+					<a href="/three/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 3 OFF -->
+					<a class="off-switch" href="/three/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 4 -->
+			<tr>
+				<td>GPIO Pin 4</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 4 ON -->
+					<a href="/four/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 4 OFF -->
+					<a class="off-switch" href="/four/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 5 -->
+			<tr>
+				<td>GPIO Pin 5</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 5 ON -->
+					<a href="/five/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 5 OFF -->
+					<a class="off-switch" href="/five/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 6 -->
+			<tr>
+				<td>GPIO Pin 6</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 6 ON -->
+					<a href="/six/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 6 OFF -->
+					<a class="off-switch" href="/six/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 7 -->
+			<tr>
+				<td>GPIO Pin 7</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 7 ON -->
+					<a href="/seven/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 7 OFF -->
+					<a class="off-switch" href="/seven/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 8 -->
+			<tr>
+				<td>GPIO Pin 8</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 8 ON -->
+					<a href="/eight/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 8 OFF -->
+					<a class="off-switch" href="/eight/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 9 -->
+			<tr>
+				<td>GPIO Pin 9</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 9 ON -->
+					<a href="/nine/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 9 OFF -->
+					<a class="off-switch" href="/nine/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 10 -->
+			<tr>
+				<td>GPIO Pin 10</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 10 ON -->
+					<a href="/ten/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 10 OFF -->
+					<a class="off-switch" href="/ten/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 11 -->
+			<tr>
+				<td>GPIO Pin 11</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 11 ON -->
+					<a href="/eleven/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 11 OFF -->
+					<a class="off-switch" href="/eleven/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 12 -->
+			<tr>
+				<td>GPIO Pin 12</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 12 ON -->
+					<a href="/twelve/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 12 OFF -->
+					<a class="off-switch" href="/twelve/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 13 -->
+			<tr>
+				<td>GPIO Pin 13</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 13 ON -->
+					<a href="/thirteen/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 13 OFF -->
+					<a class="off-switch" href="/thirteen/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 14 -->
+			<tr>
+				<td>GPIO Pin 14</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 14 ON -->
+					<a href="/fourteen/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 14 OFF -->
+					<a class="off-switch" href="/fourteen/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 15 -->
+			<tr>
+				<td>GPIO Pin 15</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 15 ON -->
+					<a href="/fifteen/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 15 OFF -->
+					<a class="off-switch" href="/fifteen/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 16 -->
+			<tr>
+				<td>GPIO Pin 16</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 16 ON -->
+					<a href="/sixteen/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 16 OFF -->
+					<a class="off-switch" href="/sixteen/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 17 -->
+			<tr>
+				<td>GPIO Pin 17</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 17 ON -->
+					<a href="/seventeen/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 17 OFF -->
+					<a class="off-switch" href="/seventeen/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 18 -->
+			<tr>
+				<td>GPIO Pin 18</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 18 ON -->
+					<a href="/eighteen/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 18 OFF -->
+					<a class="off-switch" href="/eighteen/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 19 -->
+			<tr>
+				<td>GPIO Pin 19</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 19 ON -->
+					<a href="/nineteen/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 19 OFF -->
+					<a class="off-switch" href="/nineteen/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 20 -->
+			<tr>
+				<td>GPIO Pin 20</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 20 ON -->
+					<a href="/twenty/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 20 OFF -->
+					<a class="off-switch" href="/twenty/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 21 -->
+			<tr>
+				<td>GPIO Pin 21</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 21 ON -->
+					<a href="/twentyone/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 21 OFF -->
+					<a class="off-switch" href="/twentyone/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 22 -->
+			<tr>
+				<td>GPIO Pin 22</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 22 ON -->
+					<a href="/twentytwo/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 22 OFF -->
+					<a class="off-switch" href="/twentytwo/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 23 -->
+			<tr>
+				<td>GPIO Pin 23</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 23 ON -->
+					<a href="/twentythree/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 23 OFF -->
+					<a class="off-switch" href="/twentythree/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 24 -->
+			<tr>
+				<td>GPIO Pin 24</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 24 ON -->
+					<a href="/twentyfour/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 24 OFF -->
+					<a class="off-switch" href="/twentyfour/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 25 -->
+			<tr>
+				<td>GPIO Pin 25</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 25 ON -->
+					<a href="/twentyfive/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 25 OFF -->
+					<a class="off-switch" href="/twentyfive/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 26 -->
+			<tr>
+				<td>GPIO Pin 26</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 26 ON -->
+					<a href="/twentysix/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 26 OFF -->
+					<a class="off-switch" href="/twentysix/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+			<!-- Row for GPIO Pin 27 -->
+			<tr>
+				<td>GPIO Pin 27</td>
+				<td class="gpio-control">
+					<!-- Link to turn GPIO Pin 27 ON -->
+					<a href="/twentyseven/on" onclick="return toggleButton(this, 'on')">ON</a>
+					<!-- Link to turn GPIO Pin 27 OFF -->
+					<a class="off-switch" href="/twentyseven/off" onclick="return toggleButton(this, 'off')">OFF</a>
+				</td>
+			</tr>
+
+		</tbody>
+	</table>
+
+	<!-- JavaScript for handling button toggle functionality -->
+	<script>
+		/**
+		 * Handles the visual state of toggle buttons.
+		 * Updates which button appears active based on user interaction.
+		 * 
+		 * @param {HTMLElement} element - The button that was clicked.
+		 * @param {string} action - The action to perform ('on' or 'off').
+		 * @returns {boolean} - True to allow the link to follow its href attribute.
+		 */
+		function toggleButton(element, action) {
+			// Get all button elements in the same group (i.e., within the same GPIO control)
+			const buttons = element.parentNode.querySelectorAll('a');
+			// Remove 'active' class from all buttons to reset their appearance
+			buttons.forEach(btn => btn.classList.remove('active'));
+			// Add 'active' class to the clicked button to highlight it
+			element.classList.add('active');
+
+			// The default behavior is to follow the link specified in the href attribute
+			// This could be customized with AJAX requests or other logic if needed
+			return true;  // Allow the link to follow its href attribute
+		}
+	</script>
+</body>
+
+</html>
